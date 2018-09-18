@@ -40,6 +40,9 @@ class ParametricGrid(Graph):
         else:
             raise ValueError
 
+    def getMin(self):
+        return self._min
+
     def getMax(self):
         return self._max
 

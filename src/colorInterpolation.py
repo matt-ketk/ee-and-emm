@@ -31,4 +31,4 @@ class ColorInterpolation:
 
         return (int(r), int(g), int(b))
 
-print(ColorInterpolation.rygbInterpolate(0, 1, 0))
+print(ColorInterpolation.rygbInterpolate(0, 1, 1))

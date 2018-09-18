@@ -31,7 +31,7 @@ class ElectricField:
                     if graph.get(x1, y1) + eField > graph.getMax():
                         graph.set(x1, y1, graph.getMax())
                     elif graph.get(x1, y1) + eField < graph.getMin():
-                        graph.set(x1, y1, graph.getMax())
+                        graph.set(x1, y1, graph.getMin())
                     else:
                         graph.set(x1, y1, graph.get(x1, y1) + eField)
         else:

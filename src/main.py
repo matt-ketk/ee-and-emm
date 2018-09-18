@@ -31,9 +31,9 @@ for i in range(0, 100):
     win.plotPixel(200 + i, 550, color_rgb(255, 0, 0))
 """
 
-pg = ParametricGrid(Point(200, 500), 200, 5, "m", 200, 5, "m", -10, 10, "N/C")
-ElectricField.plotCharge(20, 20, 1, pg)
-ElectricField.plotCharge(30, 40, 1, pg)
+pg = ParametricGrid(Point(200, 500), 200, 5, "m", 200, 5, "m", -100, 100, "N/C")
+ElectricField.plotCharge(20, 20, (0.000000001), pg)
+ElectricField.plotCharge(30, 40, (0.000001), pg)
 pg.draw(win)
 
 
